@@ -1,0 +1,26 @@
+=== SUBJECTS AND PREVIEWS (ENGLISH) ===
+
+Option 1 (* BEST PICK): The Existential Paradox Hook
+Subject (Mailchimp): Hi *|FNAME|*, for decades, science fiction asked...
+Subject (Shopify): Hi {{ data.customer.first_name }}, for decades, science fiction asked...
+Preview: Now the question is leaving the screen. Discover Will AI Kill Us?
+
+Option 2: The Urgent Reality Shift
+Subject (Mailchimp): Dear *|FNAME|*, AI stopped answering questions—now it's taking actions
+Subject (Shopify): Dear {{ data.customer.first_name }}, AI stopped answering questions—now it's taking actions
+Preview: From autonomous agents to physical humanoids: what happens next?
+
+Option 3: The Wisdom vs. Intelligence Test
+Subject (Mailchimp): *|FNAME|*, the danger isn't machine intelligence
+Subject (Shopify): {{ data.customer.first_name }}, the danger isn't machine intelligence
+Preview: The true risk is power without proportionate wisdom. Look inside.
+
+Option 4: The Four Futures Inquiry
+Subject (Mailchimp): Hello *|FNAME|*, which of the four AI futures will you inhabit?
+Subject (Shopify): Hello {{ data.customer.first_name }}, which of the four AI futures will you inhabit?
+Preview: Explore the 67-page illustrated guide and 24-page Sovereignty Workbook.
+
+Option 5: The Human Sovereignty Challenge
+Subject (Mailchimp): *|FNAME|*, can humanity remain wise enough to govern what it creates?
+Subject (Shopify): {{ data.customer.first_name }}, can humanity remain wise enough to govern what it creates?
+Preview: A serious, illustrated guide separating cinema hype from civilizational reality.

@@ -1,0 +1,16 @@
+{
+  "name": "Could AI Kill Us All?",
+  "short_name": "CouldAIKillUs",
+  "description": "Illustrated Guide to AI, Humanoids, Consciousness & Humanity's Future",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
