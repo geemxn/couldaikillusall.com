@@ -7,8 +7,8 @@ const firebaseConfig = {
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "cashaiai",
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "cashaiai.firebasestorage.app",
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "64214873304",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:64214873304:web:bb3e456a810d8349dcd3ad",
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-YXJ1S8WLXH"
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:64214873304:web:96a3e7c449eb76c5dcd3ad",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-J3ZW31DPKE"
 };
 
 export const app = initializeApp(firebaseConfig);
