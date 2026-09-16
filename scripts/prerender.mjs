@@ -51,6 +51,7 @@ function routeUrl(route) { return route === '/' ? domain : `${domain}${route}`; 
 
 // A small human-readable machine index. It is not treated as a ranking mechanism.
 const llms = `# Could AI Kill Us All?\n\nEvidence-first educational guides about advanced AI risk, alignment, AGI, superintelligence, cyber risk, biosecurity, autonomous weapons, humanoid robots, consciousness, and safeguards.\n\nCanonical site: ${domain}\nPrimary source library: ${domain}/sources\nEditorial policy: ${domain}/editorial-policy\n\n## Pillar guides\n${entries.filter(e=>e.path.startsWith('/articles/')).map(e=>`- ${routeUrl(e.path)}`).join('\n')}\n`;
-await fs.writeFile(path.join(dist, 'llms.txt'), llms, 'utf8');
+// Ensure Googlebot-Image compliant robots.txt is preserved in dist
+await fs.copyFile(path.join(root, 'public', 'robots.txt'), path.join(dist, 'robots.txt'));
 
 console.log(`Prerendered ${server.routes.length} indexable routes + 404; wrote ${entries.length} sitemap URLs and ${entries.filter(e=>e.image).length} image entries.`);

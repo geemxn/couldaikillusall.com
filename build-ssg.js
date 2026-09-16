@@ -224,17 +224,13 @@ ${sitemapRoutes.map(route => {
 fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log('Generated: dist/sitemap.xml');
 
-// Generate robots.txt
-const robotsTxt = `User-agent: *
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-Sitemap: ${BASE_URL}/sitemap.xml
-`;
-
-fs.writeFileSync(path.join(DIST_DIR, 'robots.txt'), robotsTxt, 'utf8');
-console.log('Generated: dist/robots.txt');
+// Copy canonical public/robots.txt
+try {
+  const publicRobots = fs.readFileSync(path.join(__dirname, 'public', 'robots.txt'), 'utf8');
+  fs.writeFileSync(path.join(DIST_DIR, 'robots.txt'), publicRobots, 'utf8');
+  console.log('Copied: public/robots.txt -> dist/robots.txt');
+} catch (e) {
+  console.warn('Could not copy public/robots.txt:', e);
+}
 
 console.log('SSG Post-Build Complete! All physical routes, sitemap, and robots verified.');

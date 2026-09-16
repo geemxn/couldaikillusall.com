@@ -1,5 +1,14 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /favicon-48x48.png
+Allow: /favicon-96x96.png
+Allow: /apple-touch-icon.png
+Allow: /assets/
+
 Sitemap: https://couldaikillusall.com/sitemap.xml
 Sitemap: https://couldaikillusall.com/image-sitemap.xml
