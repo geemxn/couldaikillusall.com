@@ -1,0 +1,152 @@
+{
+  "article_pages": 12,
+  "clean_pages": 12,
+  "missing": 0,
+  "duplicate_pages": 0,
+  "rows": [
+    {
+      "slug": "could-ai-kill-us-all",
+      "wide": "public/assets/articles/could-ai-kill-us-all-1600x900.webp",
+      "fourThree": "public/assets/articles/could-ai-kill-us-all-1200x900.webp",
+      "square": "public/assets/articles/could-ai-kill-us-all-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "how-could-ai-kill-humanity",
+      "wide": "public/assets/articles/how-could-ai-kill-humanity-1600x900.webp",
+      "fourThree": "public/assets/articles/how-could-ai-kill-humanity-1200x900.webp",
+      "square": "public/assets/articles/how-could-ai-kill-humanity-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "will-ai-kill-us-within-10-years",
+      "wide": "public/assets/articles/will-ai-kill-us-within-10-years-1600x900.webp",
+      "fourThree": "public/assets/articles/will-ai-kill-us-within-10-years-1200x900.webp",
+      "square": "public/assets/articles/will-ai-kill-us-within-10-years-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "ai-alignment-problem-explained",
+      "wide": "public/assets/articles/ai-alignment-problem-explained-1600x900.webp",
+      "fourThree": "public/assets/articles/ai-alignment-problem-explained-1200x900.webp",
+      "square": "public/assets/articles/ai-alignment-problem-explained-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "agi-vs-superintelligence-risks",
+      "wide": "public/assets/articles/agi-vs-superintelligence-risks-1600x900.webp",
+      "fourThree": "public/assets/articles/agi-vs-superintelligence-risks-1200x900.webp",
+      "square": "public/assets/articles/agi-vs-superintelligence-risks-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "can-ai-become-uncontrollable",
+      "wide": "public/assets/articles/can-ai-become-uncontrollable-1600x900.webp",
+      "fourThree": "public/assets/articles/can-ai-become-uncontrollable-1200x900.webp",
+      "square": "public/assets/articles/can-ai-become-uncontrollable-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "ai-cyberattacks-critical-infrastructure",
+      "wide": "public/assets/articles/ai-cyberattacks-critical-infrastructure-1600x900.webp",
+      "fourThree": "public/assets/articles/ai-cyberattacks-critical-infrastructure-1200x900.webp",
+      "square": "public/assets/articles/ai-cyberattacks-critical-infrastructure-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "ai-biosecurity-risks",
+      "wide": "public/assets/articles/ai-biosecurity-risks-1600x900.webp",
+      "fourThree": "public/assets/articles/ai-biosecurity-risks-1200x900.webp",
+      "square": "public/assets/articles/ai-biosecurity-risks-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "autonomous-weapons-ai-war",
+      "wide": "public/assets/articles/autonomous-weapons-ai-war-1600x900.webp",
+      "fourThree": "public/assets/articles/autonomous-weapons-ai-war-1200x900.webp",
+      "square": "public/assets/articles/autonomous-weapons-ai-war-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "humanoid-robots-risk-safety",
+      "wide": "public/assets/articles/humanoid-robots-risk-safety-1600x900.webp",
+      "fourThree": "public/assets/articles/humanoid-robots-risk-safety-1200x900.webp",
+      "square": "public/assets/articles/humanoid-robots-risk-safety-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "is-ai-conscious-sentient",
+      "wide": "public/assets/articles/is-ai-conscious-sentient-1600x900.webp",
+      "fourThree": "public/assets/articles/is-ai-conscious-sentient-1200x900.webp",
+      "square": "public/assets/articles/is-ai-conscious-sentient-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    },
+    {
+      "slug": "how-to-prevent-catastrophic-ai-risk",
+      "wide": "public/assets/articles/how-to-prevent-catastrophic-ai-risk-1600x900.webp",
+      "fourThree": "public/assets/articles/how-to-prevent-catastrophic-ai-risk-1200x900.webp",
+      "square": "public/assets/articles/how-to-prevent-catastrophic-ai-risk-1200x1200.webp",
+      "wide_size": "1600x900",
+      "fourThree_size": "1200x900",
+      "square_size": "1200x1200",
+      "unique": true,
+      "seo_integrated": true,
+      "issues": []
+    }
+  ]
+}

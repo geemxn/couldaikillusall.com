@@ -1,0 +1,10 @@
+{
+  "project": "/tmp/couldaikillusall-indexable",
+  "framework": "Unknown",
+  "spa_detected": false,
+  "files_scanned": 24,
+  "readiness_score": 100,
+  "status": "CLEAN_PREFLIGHT",
+  "findings": [],
+  "note": "Static heuristic preflight only; verify live HTTP/rendering and Search Console separately."
+}

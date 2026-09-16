@@ -1,0 +1,13 @@
+Build environment note — 2026-09-16
+
+Attempted normal npm dependency installation for the React/Vite project.
+Result: dependency download unavailable because this container could not resolve registry.npmjs.org; npm returned EAI_AGAIN and no local package cache was available.
+
+Response:
+- Did not claim the hydrated Vite build succeeded.
+- Generated and audited a deployable static prerendered dist/ from the same source content/route/meta/image strategy.
+- Packaged the normal React/Vite SSR/prerender build scripts for execution on a networked machine.
+
+Normal networked build command:
+  npm install
+  npm run build

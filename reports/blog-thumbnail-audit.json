@@ -1,0 +1,143 @@
+{
+  "root": "/mnt/data/couldaikillusall-site/dist",
+  "article_pages": 12,
+  "clean_pages": 12,
+  "missing_representative_image": 0,
+  "pages_using_duplicate_preferred_image": 0,
+  "duplicate_image_groups": {},
+  "pages": [
+    {
+      "page": "/articles/how-to-prevent-catastrophic-ai-risk.html",
+      "canonical": "https://couldaikillusall.com/articles/how-to-prevent-catastrophic-ai-risk",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/how-to-prevent-catastrophic-ai-risk-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/how-to-prevent-catastrophic-ai-risk-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/how-to-prevent-catastrophic-ai-risk-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/how-to-prevent-catastrophic-ai-risk-1200x1200.webp|https://couldaikillusall.com/assets/articles/how-to-prevent-catastrophic-ai-risk-1200x900.webp|https://couldaikillusall.com/assets/articles/how-to-prevent-catastrophic-ai-risk-1600x900.webp",
+      "first_visible_image": "/assets/articles/how-to-prevent-catastrophic-ai-risk-1600x900.webp",
+      "first_visible_alt": "Multiple protective layers surrounding an AI system and Earth, representing defense-in-depth for catastrophic AI risk management.",
+      "issues": []
+    },
+    {
+      "page": "/articles/ai-biosecurity-risks.html",
+      "canonical": "https://couldaikillusall.com/articles/ai-biosecurity-risks",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/ai-biosecurity-risks-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/ai-biosecurity-risks-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/ai-biosecurity-risks-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/ai-biosecurity-risks-1200x1200.webp|https://couldaikillusall.com/assets/articles/ai-biosecurity-risks-1200x900.webp|https://couldaikillusall.com/assets/articles/ai-biosecurity-risks-1600x900.webp",
+      "first_visible_image": "/assets/articles/ai-biosecurity-risks-1600x900.webp",
+      "first_visible_alt": "A DNA helix integrated with an abstract AI circuit and a protective containment symbol, illustrating dual-use biosecurity risk without depicting harmful procedures.",
+      "issues": []
+    },
+    {
+      "page": "/articles/is-ai-conscious-sentient.html",
+      "canonical": "https://couldaikillusall.com/articles/is-ai-conscious-sentient",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/is-ai-conscious-sentient-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/is-ai-conscious-sentient-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/is-ai-conscious-sentient-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/is-ai-conscious-sentient-1200x1200.webp|https://couldaikillusall.com/assets/articles/is-ai-conscious-sentient-1200x900.webp|https://couldaikillusall.com/assets/articles/is-ai-conscious-sentient-1600x900.webp",
+      "first_visible_image": "/assets/articles/is-ai-conscious-sentient-1600x900.webp",
+      "first_visible_alt": "An abstract artificial intelligence profile facing a luminous field of neural and cosmic patterns, illustrating the unresolved question of machine consciousness.",
+      "issues": []
+    },
+    {
+      "page": "/articles/could-ai-kill-us-all.html",
+      "canonical": "https://couldaikillusall.com/articles/could-ai-kill-us-all",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/could-ai-kill-us-all-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/could-ai-kill-us-all-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/could-ai-kill-us-all-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/could-ai-kill-us-all-1200x1200.webp|https://couldaikillusall.com/assets/articles/could-ai-kill-us-all-1200x900.webp|https://couldaikillusall.com/assets/articles/could-ai-kill-us-all-1600x900.webp",
+      "first_visible_image": "/assets/articles/could-ai-kill-us-all-1600x900.webp",
+      "first_visible_alt": "Editorial illustration of Earth between a human silhouette and an abstract artificial intelligence network, representing humanity weighing advanced AI risk.",
+      "issues": []
+    },
+    {
+      "page": "/articles/how-could-ai-kill-humanity.html",
+      "canonical": "https://couldaikillusall.com/articles/how-could-ai-kill-humanity",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/how-could-ai-kill-humanity-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/how-could-ai-kill-humanity-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/how-could-ai-kill-humanity-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/how-could-ai-kill-humanity-1200x1200.webp|https://couldaikillusall.com/assets/articles/how-could-ai-kill-humanity-1200x900.webp|https://couldaikillusall.com/assets/articles/how-could-ai-kill-humanity-1600x900.webp",
+      "first_visible_image": "/assets/articles/how-could-ai-kill-humanity-1600x900.webp",
+      "first_visible_alt": "Illustrated branching risk map flowing from an AI core toward cyber, biological, infrastructure, military, and control hazards around the globe.",
+      "issues": []
+    },
+    {
+      "page": "/articles/ai-alignment-problem-explained.html",
+      "canonical": "https://couldaikillusall.com/articles/ai-alignment-problem-explained",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/ai-alignment-problem-explained-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/ai-alignment-problem-explained-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/ai-alignment-problem-explained-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/ai-alignment-problem-explained-1200x1200.webp|https://couldaikillusall.com/assets/articles/ai-alignment-problem-explained-1200x900.webp|https://couldaikillusall.com/assets/articles/ai-alignment-problem-explained-1600x900.webp",
+      "first_visible_image": "/assets/articles/ai-alignment-problem-explained-1600x900.webp",
+      "first_visible_alt": "A human compass and an artificial intelligence network aligning along the same luminous path, illustrating the AI alignment problem.",
+      "issues": []
+    },
+    {
+      "page": "/articles/autonomous-weapons-ai-war.html",
+      "canonical": "https://couldaikillusall.com/articles/autonomous-weapons-ai-war",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/autonomous-weapons-ai-war-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/autonomous-weapons-ai-war-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/autonomous-weapons-ai-war-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/autonomous-weapons-ai-war-1200x1200.webp|https://couldaikillusall.com/assets/articles/autonomous-weapons-ai-war-1200x900.webp|https://couldaikillusall.com/assets/articles/autonomous-weapons-ai-war-1600x900.webp",
+      "first_visible_image": "/assets/articles/autonomous-weapons-ai-war-1600x900.webp",
+      "first_visible_alt": "Abstract unmanned systems and a human decision node separated by a bright control boundary, representing military AI and meaningful human oversight.",
+      "issues": []
+    },
+    {
+      "page": "/articles/can-ai-become-uncontrollable.html",
+      "canonical": "https://couldaikillusall.com/articles/can-ai-become-uncontrollable",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/can-ai-become-uncontrollable-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/can-ai-become-uncontrollable-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/can-ai-become-uncontrollable-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/can-ai-become-uncontrollable-1200x1200.webp|https://couldaikillusall.com/assets/articles/can-ai-become-uncontrollable-1200x900.webp|https://couldaikillusall.com/assets/articles/can-ai-become-uncontrollable-1600x900.webp",
+      "first_visible_image": "/assets/articles/can-ai-become-uncontrollable-1600x900.webp",
+      "first_visible_alt": "An abstract AI core inside concentric containment rings with one pathway testing the boundary, illustrating control and oversight rather than a literal escaped machine.",
+      "issues": []
+    },
+    {
+      "page": "/articles/humanoid-robots-risk-safety.html",
+      "canonical": "https://couldaikillusall.com/articles/humanoid-robots-risk-safety",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/humanoid-robots-risk-safety-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/humanoid-robots-risk-safety-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/humanoid-robots-risk-safety-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/humanoid-robots-risk-safety-1200x1200.webp|https://couldaikillusall.com/assets/articles/humanoid-robots-risk-safety-1200x900.webp|https://couldaikillusall.com/assets/articles/humanoid-robots-risk-safety-1600x900.webp",
+      "first_visible_image": "/assets/articles/humanoid-robots-risk-safety-1600x900.webp",
+      "first_visible_alt": "A humanoid robot and a human standing in a modern city with visible safety boundaries and permission zones, representing embodied AI oversight.",
+      "issues": []
+    },
+    {
+      "page": "/articles/ai-cyberattacks-critical-infrastructure.html",
+      "canonical": "https://couldaikillusall.com/articles/ai-cyberattacks-critical-infrastructure",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/ai-cyberattacks-critical-infrastructure-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/ai-cyberattacks-critical-infrastructure-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/ai-cyberattacks-critical-infrastructure-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/ai-cyberattacks-critical-infrastructure-1200x1200.webp|https://couldaikillusall.com/assets/articles/ai-cyberattacks-critical-infrastructure-1200x900.webp|https://couldaikillusall.com/assets/articles/ai-cyberattacks-critical-infrastructure-1600x900.webp",
+      "first_visible_image": "/assets/articles/ai-cyberattacks-critical-infrastructure-1600x900.webp",
+      "first_visible_alt": "A digital city and critical infrastructure network protected by a luminous shield while an AI-driven cyber signal probes the perimeter.",
+      "issues": []
+    },
+    {
+      "page": "/articles/agi-vs-superintelligence-risks.html",
+      "canonical": "https://couldaikillusall.com/articles/agi-vs-superintelligence-risks",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/agi-vs-superintelligence-risks-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/agi-vs-superintelligence-risks-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/agi-vs-superintelligence-risks-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/agi-vs-superintelligence-risks-1200x1200.webp|https://couldaikillusall.com/assets/articles/agi-vs-superintelligence-risks-1200x900.webp|https://couldaikillusall.com/assets/articles/agi-vs-superintelligence-risks-1600x900.webp",
+      "first_visible_image": "/assets/articles/agi-vs-superintelligence-risks-1600x900.webp",
+      "first_visible_alt": "Layered intelligence levels rising from narrow tools to a luminous network above a human skyline, representing AGI and superintelligence as capability thresholds.",
+      "issues": []
+    },
+    {
+      "page": "/articles/will-ai-kill-us-within-10-years.html",
+      "canonical": "https://couldaikillusall.com/articles/will-ai-kill-us-within-10-years",
+      "preferred_image": "https://couldaikillusall.com/assets/articles/will-ai-kill-us-within-10-years-1600x900.webp",
+      "og_image": "https://couldaikillusall.com/assets/articles/will-ai-kill-us-within-10-years-1600x900.webp",
+      "twitter_image": "https://couldaikillusall.com/assets/articles/will-ai-kill-us-within-10-years-1600x900.webp",
+      "jsonld_images": "https://couldaikillusall.com/assets/articles/will-ai-kill-us-within-10-years-1200x1200.webp|https://couldaikillusall.com/assets/articles/will-ai-kill-us-within-10-years-1200x900.webp|https://couldaikillusall.com/assets/articles/will-ai-kill-us-within-10-years-1600x900.webp",
+      "first_visible_image": "/assets/articles/will-ai-kill-us-within-10-years-1600x900.webp",
+      "first_visible_alt": "A decade timeline beside a glowing AI system and Earth, designed as an editorial illustration of uncertainty rather than a countdown prediction.",
+      "issues": []
+    }
+  ],
+  "note": "Heuristic built-output audit; verify live crawlability and rendering after deployment."
+}

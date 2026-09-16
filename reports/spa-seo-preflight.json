@@ -1,0 +1,10 @@
+{
+  "project": "/mnt/data/couldaikillusall-site",
+  "framework": "React + Vite",
+  "spa_detected": true,
+  "files_scanned": 45,
+  "readiness_score": 100,
+  "status": "CLEAN_PREFLIGHT",
+  "findings": [],
+  "note": "Static heuristic preflight only; verify live HTTP/rendering and Search Console separately."
+}

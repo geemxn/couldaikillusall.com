@@ -1,0 +1,9 @@
+{
+  "root": "/mnt/data/couldaikillusall-site/dist",
+  "indexable_routes": 19,
+  "article_routes": 12,
+  "unique_article_og_images": 12,
+  "errors": [],
+  "warnings": [],
+  "status": "PASS"
+}

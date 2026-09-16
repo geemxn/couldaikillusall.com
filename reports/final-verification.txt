@@ -1,0 +1,49 @@
+FINAL VERIFICATION — 2026-09-16
+
+== syntax ==
+Node and Python syntax: PASS
+
+== content ==
+Verified 12 articles; word range 3242-4227; 36 unique article image files.
+Content verification passed.
+
+== source SEO ==
+{
+  "project": "/mnt/data/couldaikillusall-site",
+  "framework": "React + Vite",
+  "spa_detected": true,
+  "files_scanned": 45,
+  "readiness_score": 100,
+  "status": "CLEAN_PREFLIGHT",
+  "findings": [],
+  "note": "Static heuristic preflight only; verify live HTTP/rendering and Search Console separately."
+}
+
+== sitemap ==
+URLs: 19
+Result: 0 error(s), 0 warning(s)
+URLs: 12
+Result: 0 error(s), 0 warning(s)
+
+== built article images ==
+{
+  "article_pages": 12,
+  "clean_pages": 12,
+  "missing_representative_image": 0,
+  "pages_using_duplicate_preferred_image": 0,
+  "duplicate_image_groups": 0
+}
+
+== built routes ==
+{
+  "root": "/mnt/data/couldaikillusall-site/dist",
+  "indexable_routes": 19,
+  "article_routes": 12,
+  "unique_article_og_images": 12,
+  "errors": [],
+  "warnings": [],
+  "status": "PASS"
+}
+
+== placeholder scan ==
+No placeholder/template leakage detected.
