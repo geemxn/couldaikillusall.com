@@ -10,7 +10,7 @@ const articleFiles = fs.readdirSync(articleDir).filter(f => /^\d\d-.*\.md$/.test
 const failures = [];
 const wordCount = (text) => (text.match(/[\p{L}\p{N}][\p{L}\p{N}'’\-]*/gu) || []).length;
 
-if (articleFiles.length !== 12) failures.push(`Expected 12 article markdown files, found ${articleFiles.length}`);
+if (articleFiles.length !== 16) failures.push(`Expected 16 article markdown files, found ${articleFiles.length}`);
 for (const file of articleFiles) {
   const text = fs.readFileSync(path.join(articleDir, file),'utf8');
   const words = wordCount(text);

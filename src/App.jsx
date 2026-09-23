@@ -7,7 +7,8 @@ import { BookCTA } from './components/BookCTA';
 import { ArticleCard } from './components/ArticleCard';
 import { SeoClient } from './components/SeoClient';
 import { articles, articleMap } from './content/articles';
-import { extractToc, readingMinutes, wordCount } from './lib/text';
+import { articleSections, articleSectionMap } from './content/articleSections';
+import { extractToc, readingMinutes, wordCount, slugifyHeading } from './lib/text';
 import { site } from './siteConfig';
 
 const primaryArticles = articles.slice(0, 6);
@@ -158,7 +159,26 @@ function ArticlePage() {
         <div className="container article-layout">
           <aside className="toc" aria-label="On this page">
             <strong>On this page</strong>
-            <nav>{toc.filter((item) => item.level === 2).map((item) => <a key={item.id} href={`#${item.id}`}>{item.label}</a>)}</nav>
+            <nav>
+              {toc.filter((item) => item.level === 2).map((item) => {
+                const sectionMeta = article.slug === 'could-ai-kill-us-all' && (articleSectionMap[item.id] || articleSectionMap[item.id.replace(/and/g, '-and-')]);
+                return (
+                  <div key={item.id} className="toc-item">
+                    <a className="toc-jump" href={`#${item.id}`}>{item.label}</a>
+                    {sectionMeta && (
+                      <a
+                        className="toc-page-link"
+                        href={`/articles/${article.slug}/${sectionMeta.section}`}
+                        title={`Open standalone page: ${item.label}`}
+                        aria-label={`Open standalone page: ${item.label}`}
+                      >
+                        ↗
+                      </a>
+                    )}
+                  </div>
+                );
+              })}
+            </nav>
             <a className="toc-source-link" href={`#${sourceHeading?.id || 'sources'}`}>Jump to sources ↓</a>
           </aside>
 
@@ -182,6 +202,64 @@ function ArticlePage() {
         </div>
       </article>
     </>
+  );
+}
+
+// Extracts the markdown body for a specific ## section (by its slug id)
+function extractSectionBody(markdownBody, sectionId) {
+  const lines = markdownBody.split('\n');
+  let collecting = false;
+  const sectionLines = [];
+  for (const line of lines) {
+    const h2match = line.match(/^##\s+(.+)$/);
+    if (h2match) {
+      const id = slugifyHeading(h2match[1].replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').trim());
+      if (id === sectionId) { collecting = true; sectionLines.push(line); continue; }
+      if (collecting) break; // hit next h2, stop
+    }
+    if (collecting) sectionLines.push(line);
+  }
+  return sectionLines.join('\n');
+}
+
+function ArticleSectionPage() {
+  const { slug, section } = useParams();
+  const article = articleMap[slug];
+  const sectionMeta = articleSectionMap[section];
+  if (!article || !sectionMeta) return <NotFoundPage />;
+
+  const sectionBody = extractSectionBody(article.body, section);
+  if (!sectionBody) return <NotFoundPage />;
+
+  return (
+    <article className="article-page">
+      <section className="section page-hero-space">
+        <div className="container" style={{ maxWidth: '860px' }}>
+          <nav className="breadcrumbs" aria-label="Breadcrumb" style={{ marginBottom: '24px' }}>
+            <a href="/">Home</a><span>›</span>
+            <a href="/articles">Guides</a><span>›</span>
+            <a href={`/articles/${slug}`}>Could AI Kill Us All?</a><span>›</span>
+            <span>{sectionMeta.heading}</span>
+          </nav>
+          <a href={`/articles/${slug}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: 'var(--gold)', textDecoration: 'none', fontSize: '14px', fontWeight: 700, marginBottom: '32px' }}>
+            ← Read the full article
+          </a>
+          <div className="article-prose">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={{
+              a: ({href, children, ...props}) => {
+                const external = href?.startsWith('http');
+                return <a href={href} {...props} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>{children}</a>;
+              }
+            }}>{sectionBody}</ReactMarkdown>
+          </div>
+          <div style={{ marginTop: '48px', padding: '24px', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--border-subtle)', textAlign: 'center' }}>
+            <p style={{ color: 'var(--text-sub)', marginBottom: '16px', fontSize: '15px' }}>This is one section of a comprehensive guide.</p>
+            <a href={`/articles/${slug}`} className="button button-gold">Read the Full Article →</a>
+          </div>
+          <BookCTA compact />
+        </div>
+      </section>
+    </article>
   );
 }
 
@@ -340,6 +418,7 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/articles" element={<ArticlesPage />} />
         <Route path="/articles/:slug" element={<ArticlePage />} />
+        <Route path="/articles/:slug/:section" element={<ArticleSectionPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
         <Route path="/glossary" element={<GlossaryPage />} />

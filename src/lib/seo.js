@@ -1,6 +1,7 @@
 import { site } from '../siteConfig';
 import { articleMap, articles } from '../content/articles';
 import { readingMinutes, wordCount } from './text';
+import { articleSections, articleSectionMap } from '../content/articleSections';
 
 const absolute = (path) => path.startsWith('http') ? path : `${site.domain}${path}`;
 
@@ -66,6 +67,48 @@ export function getPageMeta(urlPath) {
         published: article.published,
         modified: article.modified,
         jsonLd: articleJsonLd(article)
+      };
+    }
+  }
+
+  // Section pages: /articles/could-ai-kill-us-all/[section]
+  if (clean.startsWith('/articles/could-ai-kill-us-all/')) {
+    const sectionSlug = clean.slice('/articles/could-ai-kill-us-all/'.length);
+    const sectionMeta = articleSectionMap[sectionSlug];
+    if (sectionMeta) {
+      const sectionUrl = `${site.domain}/articles/could-ai-kill-us-all/${sectionSlug}`;
+      const sectionTitle = `${sectionMeta.heading} — Could AI Kill Us All?`;
+      return {
+        title: sectionTitle,
+        description: sectionMeta.description,
+        canonical: sectionUrl,
+        robots: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1',
+        image: `${site.domain}/assets/articles/could-ai-kill-us-all-1600x900.webp`,
+        imageAlt: 'AI risk section from Could AI Kill Us All? — comprehensive guide by Book of Wisdom University.',
+        type: 'article',
+        published: site.launchDate,
+        modified: site.launchDate,
+        jsonLd: [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: sectionTitle,
+            description: sectionMeta.description,
+            url: sectionUrl,
+            isPartOf: { '@type': 'WebPage', url: `${site.domain}/articles/could-ai-kill-us-all` },
+            publisher: { '@type': 'Organization', name: site.publisher, url: `${site.domain}/about` }
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: site.domain },
+              { '@type': 'ListItem', position: 2, name: 'Articles', item: `${site.domain}/articles` },
+              { '@type': 'ListItem', position: 3, name: 'Could AI Kill Us All?', item: `${site.domain}/articles/could-ai-kill-us-all` },
+              { '@type': 'ListItem', position: 4, name: sectionMeta.heading, item: sectionUrl }
+            ]
+          }
+        ]
       };
     }
   }
@@ -189,8 +232,15 @@ ${jsonLd}`;
 
 export function getSitemapEntries() {
   const staticPages = ['/', '/articles', '/about', '/editorial-policy', '/glossary', '/sources', '/book'];
+  const parentArticle = articleMap['could-ai-kill-us-all'];
   return [
     ...staticPages.map((path) => ({ path, lastmod: site.launchDate })),
-    ...articles.map((article) => ({ path: `/articles/${article.slug}`, lastmod: article.modified, image: article.image.wide, imageAlt: article.imageAlt }))
+    ...articles.map((article) => ({ path: `/articles/${article.slug}`, lastmod: article.modified, image: article.image.wide, imageAlt: article.imageAlt })),
+    ...articleSections.map((s) => ({
+      path: `/articles/could-ai-kill-us-all/${s.section}`,
+      lastmod: site.launchDate,
+      image: parentArticle?.image.wide,
+      imageAlt: parentArticle?.imageAlt
+    }))
   ];
 }

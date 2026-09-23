@@ -2,8 +2,9 @@ from PIL import Image, ImageDraw, ImageFilter
 from pathlib import Path
 import math, random
 
-OUT = Path('/mnt/data/couldaikillusall-site/public/assets/articles')
-BRAND = Path('/mnt/data/couldaikillusall-site/public/assets/brand')
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / 'public' / 'assets' / 'articles'
+BRAND = ROOT / 'public' / 'assets' / 'brand'
 OUT.mkdir(parents=True, exist_ok=True)
 BRAND.mkdir(parents=True, exist_ok=True)
 
@@ -20,6 +21,10 @@ TOPICS = {
  'humanoid-robots-risk-safety': ('humanoid', (7,22,34), (54,202,196), (236,184,72)),
  'is-ai-conscious-sentient': ('mind_field', (18,12,38), (164,103,255), (58,206,211)),
  'how-to-prevent-catastrophic-ai-risk': ('shield_layers', (7,24,38), (45,204,167), (246,190,68)),
+ 'jacob-coxon-resignation-anthropic-superintelligence-risk': ('alarm_exit', (14,16,36), (245,175,55), (235,75,65)),
+ 'evan-hubinger-ai-extinction-risk-anthropic-warning': ('sleeper_agent', (16,12,34), (170,95,255), (245,185,60)),
+ 'openai-model-hacks-hugging-face-autonomous-ai-risk': ('rogue_containment', (6,18,32), (245,85,70), (35,215,225)),
+ 'dario-amodei-ai-essay-machines-of-loving-grace': ('loving_grace', (8,28,38), (40,215,160), (245,195,65)),
 }
 
 def lerp(a,b,t): return int(a+(b-a)*t)
@@ -166,6 +171,50 @@ def render(slug, size, variant):
         cx,cy=w*.53,h*.50; earth(d,cx,cy,min(w,h)*.14,a1)
         for mul,col in [(.28,a1),(.38,a2),(.48,a1)]: shield(d,cx,cy,w*mul,h*mul*1.18,col)
         network(d,w*.79,h*.34,min(w,h)*.10,a1,21,15)
+    elif motif=='alarm_exit':
+        cx, cy = w * .48, h * .52
+        d.arc((cx - w * .22, cy - h * .35, cx + w * .22, cy + h * .35), 180, 360, fill=(*a1, 220), width=lw * 2)
+        d.line((cx - w * .22, cy, cx - w * .22, cy + h * .32), fill=(*a1, 200), width=lw * 2)
+        d.line((cx + w * .22, cy, cx + w * .22, cy + h * .32), fill=(*a1, 140), width=lw)
+        d.line((cx, cy + h * .25, w * .15, h * .80), fill=(*a2, 230), width=lw * 2)
+        d.ellipse((w * .12, h * .75, w * .18, h * .85), fill=(*a2, 240))
+        curve_pts = [(w * .35, h * .65), (w * .55, h * .45), (w * .72, h * .25), (w * .88, h * .12)]
+        for i in range(len(curve_pts) - 1):
+            d.line((curve_pts[i], curve_pts[i+1]), fill=(*a2, 230), width=lw * 2)
+        network(d, w * .76, h * .38, min(w, h) * .14, a1, 23, 16)
+    elif motif=='sleeper_agent':
+        cx, cy = w * .50, h * .50
+        r_outer = min(w, h) * .28
+        r_inner = min(w, h) * .14
+        d.ellipse((cx - r_outer, cy - r_outer, cx + r_outer, cy + r_outer), outline=(*a1, 190), width=lw * 2)
+        d.ellipse((cx - r_inner, cy - r_inner, cx + r_inner, cy + r_inner), fill=(*a2, 200), outline=(255, 255, 255, 220), width=lw)
+        d.line((w * .12, h * .78, w * .45, h * .74), fill=(*a1, 160), width=lw)
+        d.line((w * .45, h * .74, w * .88, h * .28), fill=(*a2, 240), width=lw * 2)
+        d.ellipse((w * .86, h * .26, w * .90, h * .30), fill=(*a2, 255))
+        network(d, w * .72, h * .48, min(w, h) * .12, a1, 24, 18)
+    elif motif=='rogue_containment':
+        cx_box, cy_box = w * .36, h * .50
+        box_w, box_h = w * .26, h * .48
+        d.rectangle((cx_box - box_w/2, cy_box - box_h/2, cx_box + box_w/2, cy_box + box_h/2), outline=(*a2, 220), width=lw * 2)
+        network(d, cx_box, cy_box, min(w, h) * .11, a2, 25, 14)
+        d.line((cx_box + box_w/2, cy_box - h * .06, w * .78, h * .36), fill=(*a1, 240), width=lw * 2)
+        d.polygon([(w * .78, h * .36), (w * .74, h * .33), (w * .74, h * .39)], fill=(*a1, 240))
+        cx_hub, cy_hub = w * .78, h * .36
+        r_hub = min(w, h) * .14
+        d.ellipse((cx_hub - r_hub, cy_hub - r_hub, cx_hub + r_hub, cy_hub + r_hub), outline=(*a2, 180), width=lw)
+        network(d, cx_hub, cy_hub, min(w, h) * .09, a2, 26, 12)
+    elif motif=='loving_grace':
+        cx, cy = w * .50, h * .48
+        earth(d, cx, cy, min(w, h) * .16, a1)
+        for i in range(8):
+            ang = math.pi * i / 4
+            x2 = cx + math.cos(ang) * min(w, h) * .36
+            y2 = cy + math.sin(ang) * min(w, h) * .36
+            d.line((cx, cy, x2, y2), fill=(*a2, 110), width=max(1, lw // 2))
+        for r_mul, col in [(.24, a1), (.33, a2), (.42, a1)]:
+            r = min(w, h) * r_mul
+            d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=(*col, 170), width=lw)
+        network(d, w * .76, h * .36, min(w, h) * .13, a1, 27, 16)
 
     # vignette
     vig=Image.new('L',size,0); vd=ImageDraw.Draw(vig)

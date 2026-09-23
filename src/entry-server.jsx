@@ -4,8 +4,11 @@ import { StaticRouter } from 'react-router-dom/server';
 import { App } from './App';
 import { getPageMeta, metaToHead, getSitemapEntries } from './lib/seo';
 import { articles } from './content/articles';
+import { articleSections } from './content/articleSections';
 
-export const routes = ['/', '/articles', '/about', '/editorial-policy', '/glossary', '/sources', '/book', ...articles.map((a) => `/articles/${a.slug}`)];
+const sectionRoutes = articleSections.map((s) => `/articles/could-ai-kill-us-all/${s.section}`);
+
+export const routes = ['/', '/articles', '/about', '/editorial-policy', '/glossary', '/sources', '/book', ...articles.map((a) => `/articles/${a.slug}`), ...sectionRoutes];
 export { getSitemapEntries };
 
 export function render(url) {

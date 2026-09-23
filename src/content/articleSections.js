@@ -1,0 +1,32 @@
+// Section metadata for /articles/could-ai-kill-us-all/:section
+// Separate file to avoid circular imports between App.jsx and seo.js
+
+export const articleSections = [
+  { section: 'overview-the-question-is-serious-but-the-answer-is-not-a-prophecy', heading: 'Overview: the question is serious, but the answer is not a prophecy', description: 'An evidence-based overview of whether AI could kill us all — what the question really means, why researchers take it seriously in 2026, and how to read AI risk claims without falling into either panic or dismissal.' },
+  { section: 'what-would-ai-killing-us-all-actually-mean', heading: 'What would "AI killing us all" actually mean?', description: 'Separating ordinary AI harm, catastrophic societal harm, and existential risk — three radically different claims that must not be conflated when discussing AI extinction scenarios.' },
+  { section: 'what-current-ai-systems-can-and-cannot-do-in-2026', heading: 'What current AI systems can—and cannot—do in 2026', description: 'A clear-eyed 2026 assessment of AI capabilities: what general-purpose models can do, where they remain brittle, and why catastrophe requires reliability as well as intelligence.' },
+  { section: 'the-catastrophe-chain-capability-is-only-one-link', heading: 'The catastrophe chain: capability is only one link', description: 'A catastrophic AI scenario requires six linked conditions. The catastrophe-chain model reveals the control points where humans can intervene before harm becomes irreversible.' },
+  { section: 'risk-pathway-1-loss-of-human-control-over-advanced-agents', heading: 'Risk pathway 1: loss of human control over advanced agents', description: 'The most extreme AI risk scenario explained: what loss-of-control would require, which capabilities matter, what researchers disagree on, and how to frame the question precisely.' },
+  { section: 'risk-pathway-2-humans-using-ai-to-cause-catastrophic-harm', heading: 'Risk pathway 2: humans using AI to cause catastrophic harm', description: 'AI does not need independent goals to be dangerous. How human misuse in cybersecurity and biology creates catastrophic risk, and why dual-use capability is the central safety challenge.' },
+  { section: 'risk-pathway-3-autonomous-weapons-and-compressed-decision-time', heading: 'Risk pathway 3: autonomous weapons and compressed decision time', description: 'Military AI risk is not a robot rebellion. Automation compresses decision time, scales targeting, creates brittle dependencies, and makes escalation harder to interrupt.' },
+  { section: 'risk-pathway-4-critical-infrastructure-and-cascading-failure', heading: 'Risk pathway 4: critical infrastructure and cascading failure', description: 'How AI deployed across networked critical infrastructure creates correlated failure risk — and why coupling, not a single catastrophic choice, is the systemic danger.' },
+  { section: 'how-much-do-experts-think-the-extinction-risk-is', heading: 'How much do experts think the extinction risk is?', description: 'Why published AI extinction probabilities are subjective judgments, not measured frequencies — and how to avoid probability laundering and uncertainty laundering.' },
+  { section: 'what-science-fiction-gets-right-and-wrong', heading: 'What science fiction gets right—and wrong', description: 'What films like The Terminator and Ex Machina get right about AI governance — and why real risk scenarios do not require hatred, consciousness, or robot rebellion.' },
+  { section: 'humanoid-robots-do-not-automatically-make-extinction-more-likely', heading: 'Humanoid robots do not automatically make extinction more likely', description: 'Why a humanoid shape should not be confused with superintelligence — and how overtrust in human-like machines becomes a safety issue even before physical autonomy reaches dangerous levels.' },
+  { section: 'is-consciousness-part-of-the-danger', heading: 'Is consciousness part of the danger?', description: 'Dangerous AI does not require "waking up." Optimization can cause harm without consciousness — and why machine sentience, if it ever emerges, creates separate moral obligations.' },
+  { section: 'what-evidence-would-make-the-risk-look-more-serious', heading: 'What evidence would make the risk look more serious?', description: 'Eight specific, empirical signals that would materially increase concern about catastrophic AI risk — none requiring speculation about AI consciousness or intent.' },
+  { section: 'what-evidence-would-make-the-risk-look-less-serious', heading: 'What evidence would make the risk look less serious?', description: 'Evidence that should reduce concern about catastrophic AI risk: monitoring success, interpretability advances, containment, international norms, and limits on long-horizon planning.' },
+  { section: 'what-can-we-do-now-without-pretending-to-know-the-future', heading: 'What can we do now without pretending to know the future?', description: 'Six layered AI safety actions that are valuable across a wide range of extinction-probability beliefs: evaluation, access restriction, infrastructure security, meaningful human control, staged deployment, and incident preparedness.' },
+  { section: 'the-deeper-issue-intelligence-is-becoming-abundant-faster-than-wisdom', heading: 'The deeper issue: intelligence is becoming abundant faster than wisdom', description: 'The hardest AI safety question is about human governance — how speed over resilience, delegation over responsibility, and capability over wisdom create civilizational risk without a conscious enemy.' },
+  { section: 'faq', heading: 'FAQ: Could AI Kill Us All?', description: 'Answers to the most common questions about AI extinction risk: Is AI going to kill everyone? What is the most realistic mass-casualty scenario? Can we simply unplug AI? Does AI need consciousness to be dangerous?' },
+  { section: 'sources', heading: 'Sources: Could AI Kill Us All?', description: 'Primary sources cited in our AI extinction risk guide: the International AI Safety Report 2026, NIST AI Risk Management Framework, OpenAI Preparedness Framework, Anthropic Responsible Scaling Policy, and Google DeepMind Frontier Safety Framework.' },
+];
+
+export const articleSectionMap = Object.fromEntries([
+  ...articleSections.flatMap((s) => [
+    [s.section, s],
+    [s.section.replace(/-and-/g, 'and-'), s],
+    [s.section.replace(/-and-/g, 'and'), s]
+  ]),
+  ['what-current-ai-systems-canand-cannotdo-in-2026', articleSections[2]]
+]);
